@@ -15,9 +15,8 @@ function Todos() {
 
     return (
         <>
-            <For
-                each={todos}
-                render={(todo, idx) => (
+            <For each={todos}>
+                {(todo, idx) => (
                     <>
                         <h1>{todo.title}</h1>
                         <p>
@@ -25,7 +24,7 @@ function Todos() {
                         </p>
                     </>
                 )}
-            />
+            </For>
         </>
     )
 }
