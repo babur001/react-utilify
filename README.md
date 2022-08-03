@@ -98,6 +98,60 @@ function Todos() {
 }
 ```
 
+#### `<Loop />`
+
+The use case of this componet is while layouting components and to see multiple components in action we need to copy paste same thing over and over. With this you will do your work much simpler and productively!
+
+```jsx
+import { Loop } from 'react-utilify'
+
+function Todos() {
+    return (
+        <Loop times={5}>
+            <article>
+                <h1>Some title</h1>
+                <p>Some Paragraph</p>
+            </article>
+        </Loop>
+    )
+}
+```
+
+Instead of this:
+
+```jsx
+import { Loop } from 'react-utilify'
+
+function Todos() {
+    return (
+        <>
+            <article>
+                <h1>Some title</h1>
+                <p>Some Paragraph</p>
+            </article>
+            <article>
+                <h1>Some title</h1>
+                <p>Some Paragraph</p>
+            </article>
+            <article>
+                <h1>Some title</h1>
+                <p>Some Paragraph</p>
+            </article>
+            <article>
+                <h1>Some title</h1>
+                <p>Some Paragraph</p>
+            </article>
+            <article>
+                <h1>Some title</h1>
+                <p>Some Paragraph</p>
+            </article>
+        </>
+    )
+}
+```
+
+Want more? Just increase `times` prop: `times={1000}`
+
 This helps is to understand our code smoothly while reading! We believe making things more wordy, helps us to clearly identify what actually is happening, without overthinking.
 
 #### Future
