@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import For from './Components/For'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+    const todos = [
+        { title: 'TS', name: 'For' },
+        { title: 'Jest + RTL', name: 'map' },
+    ]
+    const [value, setValue] = useState('')
+
+    return (
+        <>
+            <input
+                type='text'
+                value={value}
+                onChange={(e) => setValue(e.target.value)}
+            />
+            <For each={todos}>
+                {(todo, idx) => (
+                    <React.Fragment key={idx}>
+                        <h1>{todo.title}</h1>
+                        <p>
+                            {idx}: {todo.name}
+                        </p>
+                    </React.Fragment>
+                )}
+            </For>
+        </>
+    )
 }
-
-export default App;
