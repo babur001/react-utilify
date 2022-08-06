@@ -1,19 +1,19 @@
-import { useState } from 'react'
-import Loop from './Components/Loop'
+import React from 'react'
+import { For } from 'react-utilify'
 
 export default function App() {
-    const [value, setValue] = useState('')
+    const todos = [
+        { id: 1, title: 'TS Support', name: 'React' },
+        { id: 2, title: 'TS Support', name: 'Haiku' },
+    ]
 
     return (
-        <>
-            <input
-                type='text'
-                value={value}
-                onChange={(e) => setValue(e.target.value)}
-            />
-            <Loop times={5}>
-                <h1>Title</h1>
-            </Loop>
-        </>
+        <For each={todos}>
+            {(todo) => (
+                <React.Fragment key={todo.name}>
+                    <h1>{todo.name}</h1>
+                </React.Fragment>
+            )}
+        </For>
     )
 }

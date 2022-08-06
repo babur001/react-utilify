@@ -18,7 +18,7 @@ it('should map items correctly', () => {
                     </p>
                 </React.Fragment>
             )}
-        </For>
+        </For>,
     )
 
     const todoTitles = screen.getAllByRole('heading')
