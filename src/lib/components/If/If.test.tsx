@@ -8,7 +8,7 @@ it('should render child when `is` true, the opposite when `is` false', () => {
         <>
             <If is={loading}>Loading..</If>
             <If is={error}>Error</If>
-        </>,
+        </>
     )
 
     const loadingMsg = screen.getByText(/loading/i)

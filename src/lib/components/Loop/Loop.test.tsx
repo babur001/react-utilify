@@ -5,7 +5,7 @@ it('should iterate component given `times`', () => {
     render(
         <Loop times={7}>
             <h1>Title</h1>
-        </Loop>,
+        </Loop>
     )
 
     const allHeadings = screen.getAllByRole('heading', {
