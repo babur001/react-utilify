@@ -154,6 +154,26 @@ Want more? Just increase `times` prop: `times={1000}`
 
 This helps is to understand our code smoothly while reading! We believe making things more wordy, helps us to clearly identify what actually is happening, without overthinking.
 
+#### `Switch -> Switch.Case` (\*beta)
+
+```jsx
+function Todos() {
+    const { loading, error, data } = useAPI(`todos`)
+
+    return (
+        <Switch>
+            <Switch.Case is={loading}>Loading...</Switch.Case>
+
+            <Switch.Case is={error}>Error!</Switch.Case>
+
+            <Switch.Case is={data}>...</Switch.Case>
+        </Switch>
+    )
+}
+```
+
+As opposed to `If` `Switch Switch.Case` renders only the case when is true and stops there!
+
 #### Future
 
 Do you have any utility component ideas? Share with me at saburovbabur@gmail.com

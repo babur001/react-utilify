@@ -59,5 +59,15 @@ module.exports = {
                 allowForLoopAfterthoughts: true,
             },
         ],
+        'import/extensions': [
+            'error',
+            'always',
+            {
+                tsx: 'never',
+                jsx: 'never',
+                js: 'never',
+                ts: 'never',
+            },
+        ],
     },
 }
