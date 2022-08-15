@@ -3,7 +3,10 @@
 <div align="center">
 	<br>
 	<br>
-	<img src="./public/Logo.svg" alt="react-utilify" height="100">
+	<img 
+        src="https://raw.githubusercontent.com/SaburovBabur/react-utilify/main/public/Logo.svg" alt="react-utilify" 
+        height="100"
+    />
 	<br>
 	<br>
 	<b>Utility Components that are joy to use!</b>
