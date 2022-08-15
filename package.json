@@ -29,7 +29,8 @@
         "lint:fix": "eslint --fix src/**/*.{js,jsx,ts,tsx,json}",
         "format": "prettier --write src/**/*.{js,jsx,ts,tsx,css,md,json} --config ./.prettierrc",
         "test": "react-scripts test",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+        "prepare": "npm run lint:fix && npm run format && npm run test"
     },
     "eslintConfig": {
         "extends": [

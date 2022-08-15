@@ -1,8 +1,31 @@
-### What is `react-utilify`?
+# React Utilify
 
-It helps you to write cleaner code, by providing components like `<For />` and `<If />`. It is written in Typescript and unit tested using Jest + React Testing Library.
+<div align="center">
+	<br>
+	<br>
+	<img src="./public/Logo.svg" alt="react-utilify" height="100">
+	<br>
+	<br>
+	<b>Utility Components that are joy to use!</b>
+	<br>
+	<br>
+	<br>
+	<br>
+	<hr>
+</div>
+<br>
 
-#### `<For />`
+## What is `react-utilify`?
+
+<br>
+
+It helps you to write cleaner code and enjoy, by providing components like `<For />`, `Loop`, `Switch Switch.Case` and `<If />`.
+
+Typescript based thus enabling type-safety and battle tested using jest and react-testing-library!
+<br />
+<hr />
+
+### `<For />`
 
 ```jsx
 import { For } from 'react-utilify'
@@ -152,8 +175,6 @@ function Todos() {
 
 Want more? Just increase `times` prop: `times={1000}`
 
-This helps is to understand our code smoothly while reading! We believe making things more wordy, helps us to clearly identify what actually is happening, without overthinking.
-
 #### `Switch -> Switch.Case` (\*beta)
 
 ```jsx
@@ -174,6 +195,8 @@ function Todos() {
 
 As opposed to `If` `Switch Switch.Case` renders only the case when is true and stops there!
 
+Human readable code is awesome! We all love it!
+
 #### Future
 
-Do you have any utility component ideas? Share with me at saburovbabur@gmail.com
+More awesome components to be added yet. Your ideas is important for us, do you have any utility component ideas? Share with it us at saburovbabur@gmail.com. Enjoy!
