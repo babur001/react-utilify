@@ -1,11 +1,14 @@
 {
     "name": "react-utilify",
-    "version": "1.1.2",
+    "version": "1.1.7",
     "author": "Saburov Babur",
     "main": "dist/index.ts",
-    "module": "dist/index.ts",
+    "module": "dist",
     "peerDependencies": {
+        "@babel/cli": "^7.18.10",
+        "@babel/core": "^7.18.10",
         "@babel/polyfill": "^7.12.1",
+        "@babel/preset-env": "^7.18.10",
         "@testing-library/jest-dom": "^5.16.4",
         "@testing-library/react": "^13.3.0",
         "@testing-library/user-event": "^13.5.0",
@@ -13,14 +16,26 @@
         "@types/node": "^16.11.47",
         "@types/react": "^18.0.15",
         "@types/react-dom": "^18.0.6",
+        "@typescript-eslint/eslint-plugin": "^5.32.0",
+        "@typescript-eslint/parser": "^5.32.0",
+        "eslint": "^8.21.0",
+        "eslint-config-airbnb": "^19.0.4",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-import-resolver-typescript": "^3.4.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-jsx-a11y": "^6.6.1",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-react": "^7.30.1",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "prettier": "^2.7.1",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-scripts": "5.0.1",
-        "typescript": "^4.7.4"
+        "react-utilify": "latest",
+        "typescript": "^4.7.4",
+        "win-node-env": "^0.6.1"
     },
-    "dependencies": {
-        "react-utilify": "^1.1.0"
-    },
+    "dependencies": {},
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
@@ -50,22 +65,5 @@
             "last 1 safari version"
         ]
     },
-    "devDependencies": {
-        "@babel/cli": "^7.18.10",
-        "@babel/core": "^7.18.10",
-        "@babel/preset-env": "^7.18.10",
-        "@typescript-eslint/eslint-plugin": "^5.32.0",
-        "@typescript-eslint/parser": "^5.32.0",
-        "eslint": "^8.21.0",
-        "eslint-config-airbnb": "^19.0.4",
-        "eslint-config-prettier": "^8.5.0",
-        "eslint-import-resolver-typescript": "^3.4.0",
-        "eslint-plugin-import": "^2.26.0",
-        "eslint-plugin-jsx-a11y": "^6.6.1",
-        "eslint-plugin-prettier": "^4.2.1",
-        "eslint-plugin-react": "^7.30.1",
-        "eslint-plugin-react-hooks": "^4.6.0",
-        "prettier": "^2.7.1",
-        "win-node-env": "^0.6.1"
-    }
+    "devDependencies": {}
 }
