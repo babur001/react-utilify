@@ -18,6 +18,7 @@
 ## What is `react-utilify`?
 
 <br>
+
 It is a way to make your codebase shine ✨. Providing components such as `For`, `Loop`, `Switch Switch.Case` and `If`.
 
 `React-utilify` is **Typescript** based thus enabling type-safety and battle tested using **jest and react-testing-library**!
