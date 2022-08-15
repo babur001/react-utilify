@@ -1,9 +1,9 @@
 {
     "name": "react-utilify",
-    "version": "1.1.7",
+    "version": "1.1.8",
     "author": "Saburov Babur",
     "main": "dist/index.ts",
-    "module": "dist",
+    "module": "dist/index.ts",
     "peerDependencies": {
         "@babel/cli": "^7.18.10",
         "@babel/core": "^7.18.10",
@@ -44,8 +44,7 @@
         "lint:fix": "eslint --fix src/**/*.{js,jsx,ts,tsx,json}",
         "format": "prettier --write src/**/*.{js,jsx,ts,tsx,css,md,json} --config ./.prettierrc",
         "test": "react-scripts test",
-        "eject": "react-scripts eject",
-        "prepare": "npm run lint:fix && npm run format && npm run test"
+        "eject": "react-scripts eject"
     },
     "eslintConfig": {
         "extends": [
