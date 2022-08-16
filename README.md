@@ -22,7 +22,7 @@
 
 <br>
 
-It is a super lightweight <small style="color: #21CF67">(756 bytes)</small> uility components to make your codebase shine ✨. Providing components such as `For`, `Loop`, `Switch Switch.Case` and `If`.
+It is a super lightweight **`(756 bytes)`** uility components to make your codebase shine ✨. Providing components such as `For`, `Loop`, `Switch Switch.Case` and `If`.
 
 `React-utilify` is **Typescript** based thus enabling type-safety and battle tested using **jest and react-testing-library**!
 <br />
