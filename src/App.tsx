@@ -1,5 +1,5 @@
 import React from 'react'
-import { For, If, Loop } from 'react-utilify'
+import { For } from './lib'
 
 export default function App() {
     const todos = [
@@ -8,12 +8,28 @@ export default function App() {
     ]
 
     return (
-        <For each={todos}>
-            {(todo) => (
-                <React.Fragment key={todo.name}>
-                    <h1>{todo.name}</h1>
-                </React.Fragment>
-            )}
-        </For>
+        <>
+            <For each={todos}>
+                {(todo) => (
+                    <div key={todo.name}>
+                        <h1>Something</h1>
+                        {(() => 12)()}
+                        {[...new Array(5)].map(() => (
+                            <div key={todo.id}>
+                                <h1>{todo.name}</h1>
+                            </div>
+                        ))}
+                    </div>
+                )}
+            </For>
+            <hr />
+            <For each={todos}>
+                {(todo) => (
+                    <React.Fragment key={todo.name}>
+                        <h1>{todo.name}</h1>
+                    </React.Fragment>
+                )}
+            </For>
+        </>
     )
 }
