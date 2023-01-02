@@ -1,6 +1,6 @@
 {
   "name": "react-utilify",
-  "version": "1.1.12",
+  "version": "1.1.14",
   "author": "Saburov Babur",
   "main": "dist/index.js",
   "keywords": [
@@ -8,7 +8,7 @@
     "utility components"
   ],
   "publishConfig": {
-    "access": "restricted"
+    "access": "public"
   },
   "devDependencies": {
     "@babel/cli": "^7.20.7",
@@ -21,7 +21,7 @@
     "react-dom": ">=17.0.0"
   },
   "scripts": {
-    "build": "rm -rf dist && cp -R ../src/lib lib && tsc --project tsconfig.json && rm -rf lib"
+    "build": "rm -rf dist && cp -R ../src/lib lib && cp ../README.md . && tsc --project tsconfig.json && rm -rf lib"
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1"
