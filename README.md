@@ -26,101 +26,102 @@ It is a super lightweight **(756 bytes)** uility components to make your codebas
 
 `React-utilify` is **Typescript** based thus enabling type-safety and battle tested using **jest and react-testing-library**!
 <br />
+
 <hr />
 
 ### `<For />`
 
 ```jsx
-import { For } from 'react-utilify'
+import { For } from 'react-utilify';
 
 function Todos() {
-    const todos = [
-        { title: 'TS', name: 'For' },
-        { title: 'Jest + RTL', name: 'map' },
-    ]
+  const todos = [
+    { title: 'TS', name: 'For' },
+    { title: 'Jest + RTL', name: 'map' },
+  ];
 
-    return (
-        <>
-            <For each={todos}>
-                {(todo, idx) => (
-                    <>
-                        <h1>{todo.title}</h1>
-                        <p>
-                            {idx}: {todo.name}
-                        </p>
-                    </>
-                )}
-            </For>
-        </>
-    )
+  return (
+    <>
+      <For each={todos}>
+        {(todo, idx) => (
+          <>
+            <h1>{todo.title}</h1>
+            <p>
+              {idx}: {todo.name}
+            </p>
+          </>
+        )}
+      </For>
+    </>
+  );
 }
 ```
 
 More readable than this:
 
 ```jsx
-import React from 'react'
+import React from 'react';
 
 function Todos() {
-    const todos = [
-        { title: 'TS', name: 'For' },
-        { title: 'Jest + RTL', name: 'map' },
-    ]
+  const todos = [
+    { title: 'TS', name: 'For' },
+    { title: 'Jest + RTL', name: 'map' },
+  ];
 
-    return (
-        <>
-            {todos.map((todo) => {
-                return (
-                    <>
-                        <h1>{todo.title}</h1>
-                        <p>
-                            {idx}: {todo.name}
-                        </p>
-                    </>
-                )
-            })}
-        </>
-    )
+  return (
+    <>
+      {todos.map((todo) => {
+        return (
+          <>
+            <h1>{todo.title}</h1>
+            <p>
+              {idx}: {todo.name}
+            </p>
+          </>
+        );
+      })}
+    </>
+  );
 }
 ```
 
 #### `<If />`
 
 ```jsx
-import { If } from 'react-utilify'
+import { If } from 'react-utilify';
 
 function Todos() {
-    return (
-        <>
-            <if is={loading}>Loading...</if>
+  return (
+    <>
+      <if is={loading}>Loading...</if>
 
-            <If is={error}>Error!</If>
+      <If is={error}>Error!</If>
 
-            <If is={emptyData}>+Create task</If>
+      <If is={emptyData}>+Create task</If>
 
-            <If is={data}>...</If>
-        </>
-    )
+      <If is={data}>...</If>
+    </>
+  );
 }
 ```
 
 Much cleaner than this:
 
 ```jsx
-import React from 'react'
+import React from 'react';
 
 function Todos() {
-    return (
-        <>
-            {isloading ? <>Loading...</> : <>''</>}
+  return (
+    <>
+      {isloading ? <>Loading...</> : <>''</>}
 
-            {isError && !isLoading && <>Error!</>}
+      {isError && !isLoading && <>Error!</>}
 
-            {data.length === 0 && !isError && <>+Create task</>}
+      {data.length === 0 && !isError && <>+Create task</>}
 
-            {data.length > 0 && !isError && <>...</>}
-        </>
-    )
+      {data.length > 0 && !isError && <>...</>}
+    </>
+  );
 }
 ```
 
@@ -129,50 +130,50 @@ function Todos() {
 The use case of this componet is while layouting components and to see multiple components in action we need to copy paste same thing over and over. With this you will do your work much simpler and productively!
 
 ```jsx
-import { Loop } from 'react-utilify'
+import { Loop } from 'react-utilify';
 
 function Todos() {
-    return (
-        <Loop times={5}>
-            <article>
-                <h1>Some title</h1>
-                <p>Some Paragraph</p>
-            </article>
-        </Loop>
-    )
+  return (
+    <Loop times={5}>
+      <article>
+        <h1>Some title</h1>
+        <p>Some Paragraph</p>
+      </article>
+    </Loop>
+  );
 }
 ```
 
 Instead of this:
 
 ```jsx
-import { Loop } from 'react-utilify'
+import { Loop } from 'react-utilify';
 
 function Todos() {
-    return (
-        <>
-            <article>
-                <h1>Some title</h1>
-                <p>Some Paragraph</p>
-            </article>
-            <article>
-                <h1>Some title</h1>
-                <p>Some Paragraph</p>
-            </article>
-            <article>
-                <h1>Some title</h1>
-                <p>Some Paragraph</p>
-            </article>
-            <article>
-                <h1>Some title</h1>
-                <p>Some Paragraph</p>
-            </article>
-            <article>
-                <h1>Some title</h1>
-                <p>Some Paragraph</p>
-            </article>
-        </>
-    )
+  return (
+    <>
+      <article>
+        <h1>Some title</h1>
+        <p>Some Paragraph</p>
+      </article>
+      <article>
+        <h1>Some title</h1>
+        <p>Some Paragraph</p>
+      </article>
+      <article>
+        <h1>Some title</h1>
+        <p>Some Paragraph</p>
+      </article>
+      <article>
+        <h1>Some title</h1>
+        <p>Some Paragraph</p>
+      </article>
+      <article>
+        <h1>Some title</h1>
+        <p>Some Paragraph</p>
+      </article>
+    </>
+  );
 }
 ```
 
@@ -182,17 +183,17 @@ Want more? Just increase `times` prop: `times={1000}`
 
 ```jsx
 function Todos() {
-    const { loading, error, data } = useAPI(`todos`)
+  const { loading, error, data } = useAPI(`todos`);
 
-    return (
-        <Switch>
-            <Switch.Case is={loading}>Loading...</Switch.Case>
+  return (
+    <Switch>
+      <Switch.Case is={loading}>Loading...</Switch.Case>
 
-            <Switch.Case is={error}>Error!</Switch.Case>
+      <Switch.Case is={error}>Error!</Switch.Case>
 
-            <Switch.Case is={data}>...</Switch.Case>
-        </Switch>
-    )
+      <Switch.Case is={data}>...</Switch.Case>
+    </Switch>
+  );
 }
 ```
 
