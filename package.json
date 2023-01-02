@@ -1,6 +1,5 @@
 {
     "name": "react-utilify",
-    "version": "1.1.11",
     "author": "Saburov Babur",
     "main": "dist/index.ts",
     "module": "dist/index.ts",
