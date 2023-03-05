@@ -3,11 +3,10 @@ interface IProps<T> {
   each: T[];
 }
 
-function For<T>({ children, each }: IProps<T>): JSX.Element {
-  // @todo: Memoize render
+function For<T>({ children, each }: IProps<T>) {
   const rendered = each.map((el, idx) => children(el, idx));
 
-  return <>{rendered}</>;
+  return rendered;
 }
 
 export default For;
