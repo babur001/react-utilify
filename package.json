@@ -64,5 +64,6 @@
         "react-scripts": "5.0.1",
         "react-utilify": "latest",
         "typescript": "^4.7.4"
-    }
+    },
+    "version": "1.2.4"
 }
