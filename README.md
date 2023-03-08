@@ -18,7 +18,7 @@
 </div>
 <br>
 
-# Caution 🚧: The library faced some issues while development, and under rewrite and some APIs are subjet to changes. Currently does not support commonJS modules (throws error in node environment Unit tests).
+### Caution 🚧: The library faced some issues while development, and under rewrite and some APIs are subjet to changes. Currently does not support commonJS modules (throws error in node environment Unit tests).
 
 ## What is `react-utilify`?
 
