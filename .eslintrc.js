@@ -31,7 +31,7 @@ module.exports = {
     indent: 'off',
     'no-duplicate-imports': 'error',
     quotes: ['error', 'single'],
-    semi: ['error', 'never'],
+    // semi: ['error', 'never'],
     'react/jsx-filename-extension': [
       1,
       {

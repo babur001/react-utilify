@@ -1,5 +1,5 @@
 import React from 'react';
-import { For } from './lib';
+import Switch from './lib/components/Switch';
 
 export default function App() {
   const todos = [
@@ -7,29 +7,14 @@ export default function App() {
     { id: 2, title: 'TS Support', name: 'Haiku' },
   ];
 
+  const isGoz = true;
+
   return (
-    <>
-      <For each={todos}>
-        {(todo) => (
-          <div key={todo.name}>
-            <h1>Something</h1>
-            {(() => 12)()}
-            {[...new Array(5)].map(() => (
-              <div key={todo.id}>
-                <h1>{todo.name}</h1>
-              </div>
-            ))}
-          </div>
-        )}
-      </For>
-      <hr />
-      <For each={todos}>
-        {(todo) => (
-          <React.Fragment key={todo.name}>
-            <h1>{todo.name}</h1>
-          </React.Fragment>
-        )}
-      </For>
-    </>
+    <Switch>
+      <Switch.Case is={isGoz}>Babur</Switch.Case>
+      <Switch.Case is={isGoz}>Babur</Switch.Case>
+      <Switch.Case is={isGoz}>Babur</Switch.Case>
+      <Switch.Case is={isGoz}>Goz</Switch.Case>
+    </Switch>
   );
 }
