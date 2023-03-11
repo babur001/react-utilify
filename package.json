@@ -65,5 +65,5 @@
         "react-utilify": "latest",
         "typescript": "^4.7.4"
     },
-    "version": "1.2.4"
+    "version": "2.0.0-beta"
 }
