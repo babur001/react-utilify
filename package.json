@@ -3,7 +3,6 @@
   "author": "Saburov Babur",
   "main": "dist/index.ts",
   "module": "dist/index.ts",
-  "type": "module",
   "peerDependencies": {},
   "dependencies": {
     "react": ">=17.0.0",
