@@ -1,37 +1,30 @@
-import React, { useContext, useMemo, useState } from 'react';
+import React, { useCallback, useContext, useMemo, useState } from 'react';
 
 const SwitchContent = React.createContext({} as any);
 
 function Switch({ children }: { children: React.ReactNode }) {
-  const [rendered, setRendered] = useState<React.ReactNode[]>([]);
+  const [els, setEls] = useState<React.ReactNode[]>([]);
 
-  const value = useMemo(
-    () => [
-      rendered,
-      (el: React.ReactNode) => {
-        setRendered((prev) => (prev.length === 0 ? prev.concat(el) : prev));
-      },
-    ],
-    [rendered]
-  );
+  const push = useCallback((el: React.ReactNode) => {
+    setEls((prev) => {
+      return prev.length === 0 ? prev.concat(el) : prev;
+    });
+  }, []);
+
+  const value = useMemo(() => [els, push], []);
 
   return (
     <SwitchContent.Provider value={value}>
-      {children} {rendered}
+      {children} {els}
     </SwitchContent.Provider>
   );
 }
 
-function useSwitchContext() {
-  const [rendered, push] = useContext(SwitchContent);
-  return { rendered, push };
-}
-
 function Case({ is, children }: { is: boolean; children: React.ReactNode }) {
-  const { rendered, push } = useSwitchContext();
+  const [, push] = useContext(SwitchContent);
 
   React.useLayoutEffect(() => {
-    if (is && rendered.length === 0) {
+    if (is) {
       push(children);
     }
   }, []);

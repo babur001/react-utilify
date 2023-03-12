@@ -7708,10 +7708,10 @@ react-scripts@5.0.1:
   optionalDependencies:
     fsevents "^2.3.2"
 
-react-utilify@^2.0.1-beta:
-  version "2.0.1-beta"
-  resolved "https://registry.yarnpkg.com/react-utilify/-/react-utilify-2.0.1-beta.tgz#9ff8260f3e6fcd36fffed7f6764120f24a48b310"
-  integrity sha512-pXwJFk3iG6VBzLM+oP8Uy9Zb8CoFpACVI3+T1lSvZ23SAzy5dNXxZLZw4tSGXE15ndjQWrfom4glUt+iDVwYXQ==
+react-utilify@^2.1.1-beta:
+  version "2.1.1-beta"
+  resolved "https://registry.yarnpkg.com/react-utilify/-/react-utilify-2.1.1-beta.tgz#09e1a4663c905e5588f8f42b0a31a7ab36603a3a"
+  integrity sha512-P+WiqNx8Oy6Vdkr1JISxWGz358BpmnK7OStGPax/WBSczf3DGz260HI5GPLOwnph9c54IkyPOs5obAZl3gwEtg==
 
 react@>=17.0.0:
   version "18.2.0"

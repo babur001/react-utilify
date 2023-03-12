@@ -62,7 +62,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "^2.7.1",
     "react-scripts": "5.0.1",
-    "react-utilify": "^2.0.1-beta",
+    "react-utilify": "^2.1.1-beta",
     "typescript": "^4.7.4"
   },
   "version": "2.0.0-beta"
