@@ -5,7 +5,8 @@
   "peerDependencies": {},
   "dependencies": {
     "react": ">=17.0.0",
-    "react-dom": ">=17.0.0"
+    "react-dom": ">=17.0.0",
+    "rollup": "^3.19.1"
   },
   "scripts": {
     "format": "prettier --write src/**/*.{js,jsx,ts,tsx,css,md,json} --config ./.prettierrc"
