@@ -6,9 +6,7 @@ interface TypeProps<T> {
 }
 
 function For<T>({ children, each }: TypeProps<T>) {
-  return React.Children.map(each, (child, idx) => {
-    children(child, idx);
-  });
+  return <>{each.map((data: T, idx) => children(data, idx))}</>;
 }
 
 export default For;

@@ -1,3 +1,5 @@
+import React from 'react';
+
 interface TypeProps {
   children: React.ReactNode;
   is: boolean;

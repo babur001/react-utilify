@@ -6,7 +6,7 @@ interface TypeProps {
 }
 
 function Loop({ times, children }: TypeProps): JSX.Element {
-  return React.Children.map(new Array(times).fill(' . '), (child) => children);
+  return React.Children.map([...new Array(times).fill(' . ')], (child) => children);
 }
 
 export default Loop;
