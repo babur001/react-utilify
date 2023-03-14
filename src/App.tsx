@@ -6,7 +6,7 @@ export default function App() {
 
   return (
     <Switch>
-      <Switch.Case is={isGoz}>Babur</Switch.Case>
+      <Switch.Case is={isGoz}>Babur </Switch.Case>
       <Switch.Case is={isGoz}>Babur</Switch.Case>
       <Switch.Case is={isGoz}>Babur</Switch.Case>
       <Switch.Case is={isGoz}>Goz</Switch.Case>
