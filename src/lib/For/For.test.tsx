@@ -10,11 +10,11 @@ it('should map simple child items correctly', () => {
 
   render(
     <For each={todos}>
-      {(todo, index) => (
-        <React.Fragment key={todo.name}>
+      {(todo, idx) => (
+        <React.Fragment key={idx}>
           <h1>{todo.title}</h1>
           <p>
-            {index}: {todo.name}
+            {idx}: {todo.name}
           </p>
         </React.Fragment>
       )}
@@ -36,8 +36,8 @@ it('should render various type of children correctly', () => {
 
   render(
     <For each={todos}>
-      {(todo) => (
-        <div key={todo.name}>
+      {(todo, idx) => (
+        <div key={idx}>
           <h1>Something</h1>
 
           {(() => (
@@ -46,8 +46,8 @@ it('should render various type of children correctly', () => {
 
           {12}
 
-          {[...new Array(2)].map((el, id) => (
-            <div key={todo.id}>
+          {[...new Array(2)].map((el, idx) => (
+            <div key={idx}>
               <h1>{todo.name}</h1>
             </div>
           ))}
