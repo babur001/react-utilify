@@ -1,24 +1,25 @@
 {
   "name": "react-utilify",
   "author": "Babur",
-  "version": "2.0.0-beta",
+  "version": "2.0.0",
+  "url": "https://github.com/SaburovBabur/react-utilify.git",
   "type": "module",
-  "peerDependencies": {},
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
-  "dependencies": {
-    "@babel/preset-typescript": "^7.21.0",
-    "@types/jest": "^29.4.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
+  "dependencies": {},
   "scripts": {
     "build": "rollup --config",
     "test": "jest",
     "format": "prettier --write src/**/*.{js,jsx,ts,tsx,css,md,json} --config ./.prettierrc"
   },
   "devDependencies": {
+    "@babel/preset-typescript": "^7.21.0",
+    "@types/jest": "^29.4.1",
     "@babel/core": "^7.21.3",
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-react": "^7.18.6",
