@@ -1,9 +1,11 @@
-interface IProps {
+import React from 'react';
+
+interface TypeProps {
   children: React.ReactNode;
   is: boolean;
 }
 
-function If({ is, children }: IProps): JSX.Element {
+function If({ is, children }: TypeProps): JSX.Element {
   return <>{is ? children : null}</>;
 }
 

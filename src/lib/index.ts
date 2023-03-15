@@ -1,6 +1,6 @@
-import For from './components/For';
-import Loop from './components/Loop';
-import If from './components/If';
-import Switch from './components/Switch';
+import For from './For';
+import Loop from './Loop';
+import If from './If';
+import Switch from './Switch';
 
 export { For, Loop, If, Switch };

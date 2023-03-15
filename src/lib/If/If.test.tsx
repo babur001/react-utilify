@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import If from '.';
+import React from 'react';
 
 it('should render child when `is` true, the opposite when `is` false', () => {
   const { loading, error } = { loading: true, error: false };
