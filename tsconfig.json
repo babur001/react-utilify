@@ -16,7 +16,8 @@
     "noEmit": true,
     "jsx": "react",
     "declaration": false,
-    "sourceMap": true,
-    "outDir": "dist"
-  }
+    "sourceMap": true
+  },
+  "include": ["**/*.ts", "**/*.tsx", "**/**/*.ts", "**/**/*.tsx"],
+  "exclude": ["node_modules"]
 }

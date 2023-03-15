@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import For from '.';
+import { For } from '../dist/esm';
 import React from 'react';
 
 it('should map simple child items correctly', () => {
