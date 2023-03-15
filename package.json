@@ -4,8 +4,9 @@
   "version": "2.0.0-beta",
   "type": "module",
   "peerDependencies": {},
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
   "dependencies": {
     "@babel/preset-typescript": "^7.21.0",
     "@types/jest": "^29.4.1",
@@ -26,6 +27,7 @@
     "@rollup/plugin-json": "^6.0.0",
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-terser": "^0.4.0",
+    "@rollup/plugin-typescript": "^11.0.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
     "@types/react": "^18.0.15",
@@ -34,7 +36,9 @@
     "jest-environment-jsdom": "^29.5.0",
     "prettier": "^2.7.1",
     "rollup": "^3.19.1",
+    "rollup-plugin-dts": "^5.2.0",
     "ts-node": "^10.9.1",
+    "tslib": "^2.5.0",
     "typescript": "^4.7.4"
   }
 }

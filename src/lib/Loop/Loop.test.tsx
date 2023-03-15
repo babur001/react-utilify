@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import Loop from '.';
+import React from 'react';
 
 it('should iterate component given `times`', () => {
   render(

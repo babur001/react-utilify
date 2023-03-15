@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import Switch from '.';
+import React from 'react';
 
 it('should render only first and only element when case `is` falls to truthy', () => {
   const isGoz = true;

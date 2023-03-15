@@ -2,30 +2,45 @@ import resolve from '@rollup/plugin-node-resolve';
 import babel from '@rollup/plugin-babel';
 import commonjs from '@rollup/plugin-commonjs';
 import terser from '@rollup/plugin-terser';
+import typescript from '@rollup/plugin-typescript';
+import dts from 'rollup-plugin-dts';
+
 // import pkg from './package.json';
 
-export default {
-  input: './src/lib/index.ts',
-  output: [
-    {
-      file: 'dist/index.esm.js',
-      format: 'es',
-    },
-    {
-      file: 'dist/index.cjs.js',
-      format: 'cjs',
-    },
-  ],
+export default [
+  {
+    input: './src/lib/index.ts',
+    output: [
+      {
+        file: 'dist/esm/index.js',
+        format: 'es',
+      },
+      {
+        file: 'dist/cjs/index.js',
+        format: 'cjs',
+      },
+    ],
 
-  plugins: [
-    babel({
-      babelHelpers: 'bundled',
-      exclude: '**/node_modules/**',
-      extensions: ['.js', '.jsx', '.ts', '.tsx'],
-    }),
-    resolve({ extensions: ['.js', '.ts', '.tsx'] }),
-    commonjs(),
-    terser(),
-  ],
-  external: ['react', 'react-dom'],
-};
+    plugins: [
+      typescript({ tsconfig: './tsconfig.json' }),
+      babel({
+        babelHelpers: 'bundled',
+        exclude: '**/node_modules/**',
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      }),
+      // dts(),
+      resolve({ extensions: ['.js', '.ts', '.tsx'] }),
+      commonjs(),
+      terser(),
+    ],
+    external: ['react', 'react-dom'],
+  },
+  {
+    input: 'dist/esm/types/src/lib/index.d.ts',
+    output: [
+      { file: 'dist/esm/index.d.ts', format: 'esm' },
+      { file: 'dist/cjs/index.d.ts', format: 'cjs' },
+    ],
+    plugins: [dts()],
+  },
+];
