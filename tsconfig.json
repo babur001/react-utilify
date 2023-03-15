@@ -15,10 +15,8 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react",
-    "declaration": true,
-    "declarationDir": "types",
+    "declaration": false,
     "sourceMap": true,
-    "outDir": "dist",
-    "emitDeclarationOnly": true
+    "outDir": "dist"
   }
 }
