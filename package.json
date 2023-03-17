@@ -4,6 +4,7 @@
   "version": "2.0.32",
   "url": "https://github.com/SaburovBabur/react-utilify.git",
   "type": "module",
+  "license": "MIT",
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
