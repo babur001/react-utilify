@@ -3,7 +3,7 @@
 	<br>
 	<img 
         src="./logo.svg" alt="react-utilify" 
-        width="75%"
+        width="100%"
     />
 	<br>
 	<br>
