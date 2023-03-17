@@ -1,7 +1,7 @@
 {
   "name": "react-utilify",
   "author": "Babur",
-  "version": "2.0.3",
+  "version": "2.0.32",
   "url": "https://github.com/SaburovBabur/react-utilify.git",
   "type": "module",
   "peerDependencies": {
@@ -9,7 +9,9 @@
     "react-dom": ">=16.8.0"
   },
   "main": "dist/cjs/index.js",
-  "files": "dist",
+  "files": [
+    "dist"
+  ],
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
   "dependencies": {},
