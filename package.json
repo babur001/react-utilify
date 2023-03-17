@@ -1,7 +1,7 @@
 {
   "name": "react-utilify",
   "author": "Babur",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "url": "https://github.com/SaburovBabur/react-utilify.git",
   "type": "module",
   "peerDependencies": {
